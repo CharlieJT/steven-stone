@@ -777,6 +777,202 @@ html, body {
     right: 0;
 }
 
+.control-bar-filters {
+    margin: 20px 30px;
+    font-size: 14px;
+}
+
+.control-bar-filters>.filters-slider {
+    display: flex;
+    width: 28px;
+    height: 16px;
+    border-radius: 16px;
+}
+
+.control-bar-filters>.filters-slider>.filters-slider-left {
+    background-color: var(--blue);
+    flex: 1;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.control-bar-filters>.filters-slider>.filters-slider-right {
+    background-color: #c8c8c8;
+    flex: 1;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+/* Section 3 */
+
+.diamond-select-filters-desktop,
+.diamond-select-filters-mobile {
+    margin: 10px;
+}
+
+.diamond-select-filters-desktop>div>span,
+.diamond-select-filters-mobile>div>span {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.diamond-select-filters-mobile .truck-surrounding {
+    height: 21px;
+    width: 21px;
+    border: 1px solid #5a5a5a;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.diamond-select-filters-desktop .truck-surrounding {
+    height: 18px;
+    width: 18px;
+    border: 1px solid #5a5a5a;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.diamond-select-filters-desktop>div>span>input[type="radio"],
+.diamond-select-filters-mobile>div>span>input[type="radio"] {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.diamond-select-filters-desktop .tile-image {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.diamond-select-filters-desktop input[type="search"] {
+    width: 120px;
+    font-size: 14px;
+    margin-left: 50px;
+    padding-left: 5px;
+}
+
+.diamond-select-filters-mobile input[type="search"] {
+    width: 120px;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.diamond-select-filters-desktop .filters-text {
+    font-size: 14px;
+}
+.diamond-select-filters-mobile .filters-text {
+    font-size: 12px;
+}
+
+.diamond-select-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.diamond-select-item {
+    background-color: #fafafa;
+    border: 1px solid #c8c8c8;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.diamond-select-item>img {
+    width: calc(100% - 100px);
+    padding-right: 10px;
+    max-height: 198px;
+    max-width: 198px;
+    align-self: center;
+}
+
+.diamond-select-item .lab-grown-image {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.diamond-select-item span {
+    font-size: 12px;
+}
+
+.diamond-select-item input {
+    margin-right: 5px;
+}
+
+.diamond-select-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.diamond-select-item ul>li {
+   height: 16px;
+}
+
+.diamond-select-item .item-key,
+.diamond-select-item .item-value {
+    font-size: 11px;
+}
+
+.diamond-select-item .choose-diamond-button {
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 13px;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+.diamond-select-item .fa-chevron-up,
+.diamond-select-item .fa-chevron-down {
+    font-size: 7px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.diamond-select-item .see-details-button {
+    background-color: transparent;
+    border: 1px solid #000;
+    font-size: 13px;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.diamond-select-item .more-info-box {
+    padding: 6px;
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.diamond-select-item .list-desktop {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.diamond-select-item .list-desktop li {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    text-align: center;
+}
+
+.diamond-select-item .list-desktop li>.item-key {
+    color: #c8c8c8;
+ }
+
+ .diamond-select-item .choose-diamond-button-desktop {
+    height: 35px;
+    margin-left: 8px;
+    margin-right: 8px;
+ }
+
 /* Media Queries */
 
 @media only screen and (min-width: 576px) {
@@ -797,11 +993,24 @@ html, body {
     .select-stone-tab p {
         font-size: 14px;
     }
+    .diamond-select-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .diamond-select-item>img {
+        width: 100%!important;
+        padding: 8px;
+        max-height: unset;
+        max-width: unset;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .container {
         max-width: 720px!important;
+    }
+    .diamond-select-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -874,6 +1083,10 @@ html, body {
         width: unset;
         max-width: unset;
     }
+    .diamond-select-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -891,6 +1104,21 @@ html, body {
     }
     .image-container {
         padding-left: 15vw;
+    }
+    .diamond-select-item .choose-diamond-button-desktop {
+        height: 50px;
+    }
+    .diamond-select-item span {
+        font-size: 14px;
+    }
+    .diamond-select-item .list-desktop li {
+        line-height: 16px;
+    }
+    .diamond-select-item .item-key, .diamond-select-item .item-value {
+        font-size: 14px;
+    }
+    .diamond-select-item .list-desktop {
+        padding: 10px;
     }
 }
 
