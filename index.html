@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steven Stone</title>
+    <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+    <link href="assets/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Custom Styles -->
@@ -67,7 +70,7 @@
                     <img class="main-logo" src="assets/images/main-logo/logo.png" alt="Main Logo" >
                 </a>
                 <div class="header-main-right d-flex align-items-center">
-                    <form action="*" method="get">
+                    <form action="." method="get">
                         <input type="search" name="search" >
                     </form>
                     <span class="icons">
@@ -95,7 +98,8 @@
         </header>
 
         <!-- Section -->
-        <section class="section-1">
+        <section class="section-1 mb-5">
+            <!-- Image Container -->
             <div class="image-container">
                 <div class="main-image-surrounding">
                     <!-- Image Carousel -->
@@ -155,14 +159,275 @@
                     </div>
                 </div>
             </div>
-            <div>
-                
+            <!-- Product Info -->
+            <div class="product-container">
+                <div class="breadcrumb text-uppercase d-none d-lg-block">
+                    <span><a href="#">Home</a></span>
+                    <span class="bullet-point mx-2">&#8226;</span>
+                    <span><a href="#">Engagement Rings</a></span>
+                </div>
+                <div class="product-description">
+                    <h3>18k Rose Gold Classic Wedfit</h3>
+                    <h2>£569.00 <span class="selling-price-text">(Selling Price)</span></h2>
+                </div>
+                <div class="product-delivery-info d-flex align-items-center justify-content-center justify-content-lg-start my-4">
+                    <img src="assets/images/product-info/vector-1.png" alt="Delivery Van">
+                    <div>
+                        <p>Order in <span class="delivery-time">4 hours 3 mins and 30 seconds<span class="delivery-information-circle">i</span></span></p>
+                        <p>for your order to ship by Thursday, October 22.</p>
+                    </div>
+                </div>
+                <div class="product-buttons d-flex justify-content-center justify-content-lg-start mb-4">
+                    <button class="book-a-consultation-button">Book A Consultation</button>
+                    <button class="choose-a-consultation-button">Choose A Diamond</button>
+                </div>
+                <div class="product-select-dropdowns d-none d-lg-flex justify-content-center justify-content-lg-start mb-4">
+                    <form action="." method="get">
+                        <select>
+                            <option class="default-select" value="" selected disabled>Finger Size </option>
+                            <option value="J">J</option>
+                            <option value="K">K</option>
+                            <option value="L">L</option>
+                            <option value="M">M</option>
+                            <option value="N">N</option>
+                            <option value="O">O</option>
+                            <option value="P">P</option>
+                            <option value="Q">Q</option>
+                            <option value="R">R</option>
+                        </select>
+                        <select>
+                            <option class="default-select" value="" selected disabled>Add Engraving </option>
+                            <option class="option-block" value="J">Block</option>
+                            <option class="option-script" value="K">Script</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="product-spec d-flex flex-column justify-content-center d-lg-block mb-4">
+                    <nav class="mx-auto mx-lg-0">
+                        <img id="chevron-left" class="chevron chevron-left" src="assets/images/chevron-left.png" alt="Chevron Left">
+                        <img id="chevron-right" class="chevron chevron-right" src="assets/images/chevron-right.png" alt="Chevron Right">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-link product-details active" id="nav-product-details-tab" data-bs-toggle="tab" href="#nav-product-details" role="tab" aria-controls="nav-product-details" aria-selected="true">Product Details</a>
+                            <a class="nav-link packaging" id="nav-packaging-tab" data-bs-toggle="tab" href="#nav-packaging" role="tab" aria-controls="nav-packaging" aria-selected="false">Packaging</a>
+                            <a class="nav-link finance-information" id="nav-finance-information-tab" data-bs-toggle="tab" href="#nav-finance-information" role="tab" aria-controls="nav-finance-information" aria-selected="false">Finance Information</a>
+                            <a class="nav-link shipping-and-returns" id="nav-shipping-and-returns-tab" data-bs-toggle="tab" href="#nav-shipping-and-returns" role="tab" aria-controls="nav-shipping-and-returns" aria-selected="false">Shipping</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content mx-auto mx-lg-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-product-details" role="tabpanel" aria-labelledby="nav-product-details-tab">
+                            <p>A four claw solitaire style engagement ring. The ring is set in 18ct rose gold and features a round brilliant diamond. This setting is suitable for a round brilliant diamond between 0.18ct and 2.00ct. If you were to require this design to feature a larger diamond, then please do contact us. Reference: PRS0004</p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-packaging" role="tabpanel" aria-labelledby="nav-packaging-tab">
+                            <p>Packaging</p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-finance-information" role="tabpanel" aria-labelledby="nav-finance-information-tab">
+                            <p>Finance Information</p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-shipping-and-returns" role="tabpanel" aria-labelledby="nav-shipping-and-returns-tab">
+                            <p>Shipping And Returns</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-quality d-flex justify-content-between align-items-center">
+                    <div class="w-100">
+                        <div class="d-flex align-items-center">
+                            <p class="product-spec-1">18ct Rose Gold</p>
+                            <span class="product-quality-line"></span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p class="product-spec-1">Solitaire</p>
+                            <span class="product-quality-line"></span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p class="product-spec-1">Round Brilliant</p>
+                            <span class="product-quality-line"></span>
+                        </div>
+                    </div>
+                    <img src="assets/images/product-info/product-quality.png" alt="Product Quality">
+                </div>
             </div>
+        </section>
+        <section class="section-2">
+            <div class="down-arrow d-none d-lg-flex justify-content-center pt-5 pb-3">
+                <img src="assets/images/arrow-1.png" alt="Arrow Down">
+            </div>
+            <div class="section-2-heading text-center mb-4">
+                <h1>Select A Stone</h1>
+                <h4>Choose from 30,099 diamonds and gemostones</h4>
+            </div>
+            <div class="select-stone-tab">
+                <nav class="mx-auto mx-lg-0">
+                    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                        <a class="nav-link natural-diamond active" id="nav-natural-diamond-tab" data-bs-toggle="tab" href="#nav-natural-diamond" role="tab" aria-controls="nav-natural-diamond" aria-selected="true">
+                            <div class="select-stone-image-container">
+                                <img src="assets/images/select-a-stone/natural-diamond.png" alt="Natural Diamond">
+                            </div>
+                            <p>Natural <span class="d-none d-lg-inline">Diamond</span></p>
+                        </a>
+                        <a class="nav-link lab-created" id="nav-lab-created-tab" data-bs-toggle="tab" href="#nav-lab-created" role="tab" aria-controls="nav-lab-created" aria-selected="false">
+                            <div class="select-stone-image-container">
+                                <img src="assets/images/select-a-stone/lab-created.png" alt="Lab Created">
+                            </div>
+                            <p>Lab Created</p>
+                        </a>
+                        <a class="nav-link gemstones" id="nav-gemstones-tab" data-bs-toggle="tab" href="#nav-gemstones" role="tab" aria-controls="nav-gemstones" aria-selected="false">
+                            <div class="select-stone-image-container">
+                                <img src="assets/images/select-a-stone/gemstones.png" alt="Gemstones">
+                            </div>
+                            <p>Gemstones</p>
+                        </a>
+                    </div>
+                </nav>
+                <div class="tab-content mx-auto mx-lg-0" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-natural-diamond" role="tabpanel" aria-labelledby="nav-natural-diamond-tab">
+                        <div class="container">
+                            <div class="natural-diamond-control-bars-mobile d-lg-none">
+                                <button>Shape <i class="fa fa-chevron-up"></i></button>
+                                <button>Colour <i class="fa fa-chevron-up"></i></button>
+                                <button>Cut <i class="fa fa-chevron-up"></i></button>
+                                <button>Clarity <i class="fa fa-chevron-up"></i></button>
+                                <button>Carat <i class="fa fa-chevron-up"></i></button>
+                                <button>Price <i class="fa fa-chevron-up"></i></button>
+                            </div>
+                            <div class="natural-diamond-control-bars-desktop d-none d-lg-grid">
+                                <div>
+                                    <p class="control-bars-heading">Shape</p>
+                                    <div class="stone-shape">
+                                        <div>
+                                            <img src="assets/images/select-a-stone/lab-created.png" alt="Shape">
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/select-a-stone/lab-created.png" alt="Shape">
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/select-a-stone/lab-created.png" alt="Shape">
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/select-a-stone/lab-created.png" alt="Shape">
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/select-a-stone/lab-created.png" alt="Shape">
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/select-a-stone/lab-created.png" alt="Shape">
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/select-a-stone/lab-created.png" alt="Shape">
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/select-a-stone/lab-created.png" alt="Shape">
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/select-a-stone/lab-created.png" alt="Shape">
+                                        </div>
+                                        <div>
+                                            <img src="assets/images/select-a-stone/lab-created.png" alt="Shape">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="control-bars-heading">
+                                        <span>Colour<span class="control-bar-info">i</span></span> 
+                                    </p>
+                                    <div class="control-bar">
+                                        <div class="control-bar-range">D-L</div>
+                                        <div class="control-bar-left"></div>
+                                        <div class="control-bar-right"></div>
+                                    </div>
+                                    <div class="control-bar-listing d-flex justify-content-around mt-2">
+                                        <div>D</div>
+                                        <div>E</div>
+                                        <div>F</div>
+                                        <div>G</div>
+                                        <div>H</div>
+                                        <div>I</div>
+                                        <div>J</div>
+                                        <div>K</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="control-bars-heading">
+                                        <span>Cut<span class="control-bar-info">i</span></span> 
+                                    </p>
+                                    <div class="control-bar">
+                                        <div class="control-bar-range">Ex-F</div>
+                                        <div class="control-bar-left"></div>
+                                        <div class="control-bar-right"></div>
+                                    </div>
+                                    <div class="control-bar-listing d-flex justify-content-around mt-2">
+                                        <div>excellent</div>
+                                        <div>very good</div>
+                                        <div>good</div>
+                                        <div>fair</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="control-bars-heading">
+                                        <span>Carat<span class="control-bar-info">i</span></span> 
+                                    </p>
+                                    <div class="control-bar">
+                                        <div class="control-bar-range">0.18-12.00</div>
+                                        <div class="control-bar-left"></div>
+                                        <div class="control-bar-right"></div>
+                                    </div>
+                                    <div class="control-bar-listing d-flex justify-content-between mt-2">
+                                        <div>0.18</div>
+                                        <div>12.00</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="control-bars-heading">
+                                        <span>Clarity<span class="control-bar-info">i</span></span> 
+                                    </p>
+                                    <div class="control-bar">
+                                        <div class="control-bar-range">SI1-IF</div>
+                                        <div class="control-bar-left"></div>
+                                        <div class="control-bar-right"></div>
+                                    </div>
+                                    <div class="control-bar-listing d-flex justify-content-around mt-2">
+                                        <div>SI1</div>
+                                        <div>VS2</div>
+                                        <div>VS1</div>
+                                        <div>VWS2</div>
+                                        <div>VVS1</div>
+                                        <div>IF</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="control-bars-heading">
+                                        <span>Price<span class="control-bar-info">i</span></span> 
+                                    </p>
+                                    <div class="control-bar">
+                                        <div class="control-bar-range">£10-£462,362.00</div>
+                                        <div class="control-bar-left"></div>
+                                        <div class="control-bar-right"></div>
+                                    </div>
+                                    <div class="control-bar-listing d-flex justify-content-between mt-2">
+                                        <div>£10</div>
+                                        <div>£462,362.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    <div class="tab-pane fade" id="nav-lab-created" role="tabpanel" aria-labelledby="nav-lab-created-tab">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum saepe harum rerum optio quaerat. Illo qui alias reprehenderit molestiae, adipisci perferendis pariatur eligendi quae. Officia dolorum temporibus fuga, recusandae eius iusto repellendus expedita, sint voluptates quibusdam tenetur delectus dolor. Excepturi velit reiciendis nam hic quibusdam saepe sunt harum similique minima praesentium impedit, odit ipsum ipsam soluta nobis possimus laborum ex veritatis eius cum vero quae. Reiciendis aperiam tenetur vitae. Dolore iusto illo explicabo modi ea, culpa tempore? Voluptates adipisci delectus omnis, ad iste natus. Vel culpa quisquam harum. Sint corporis animi provident voluptate. Repellat iure sequi voluptas quidem harum exercitationem corrupti veniam architecto eos, neque accusantium delectus ut eveniet eligendi quaerat? Facilis dolore dolor beatae iste similique quis ea esse! Ipsam velit commodi aspernatur! Repudiandae quas tenetur maiores assumenda! Dicta aliquid quia quisquam in illo explicabo natus nesciunt asperiores, exercitationem hic nisi nobis eos porro corporis ut vitae qui molestias, ipsum modi impedit officiis. Eius animi, aliquam odit eos repellat hic minus sed ipsam. Sint temporibus doloribus odit distinctio, blanditiis maiores maxime. Eum est adipisci, corrupti id dolore commodi repudiandae quisquam nesciunt maxime at, incidunt a recusandae architecto eius quos nihil suscipit fugit vero quia, ullam debitis molestias non. Consequatur sequi, dolor quam doloremque rem necessitatibus! Doloremque culpa rem tempore, quidem natus assumenda id, velit, consequatur quasi fugit minus earum ratione molestias. Consequatur hic doloribus totam voluptatem ullam voluptatibus atque laborum unde odio asperiores similique, harum eveniet repellat mollitia perspiciatis modi sint, veniam debitis! Veniam corporis eligendi quaerat alias harum.</p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-gemstones" role="tabpanel" aria-labelledby="nav-gemstones-tab">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veniam, ad minima dicta suscipit, voluptatum tenetur quaerat esse eius, ducimus molestias quia alias eligendi odit saepe aliquam harum? Itaque temporibus aliquid eum harum sunt eligendi excepturi nisi. Nihil, officia! Ullam hic facilis architecto corporis, possimus beatae vero magni asperiores fugit excepturi deleniti! Quae, officia? Praesentium, labore exercitationem. Impedit, dolores? Perferendis aperiam veniam quis praesentium ipsam illo ex beatae delectus! Unde illo, quis doloribus eligendi tempora rem officia voluptatibus? Praesentium veniam, cumque soluta nostrum, id quaerat iusto blanditiis et architecto tenetur, repellat a voluptate ratione consectetur commodi dolor debitis asperiores vel accusamus! Similique quam numquam vitae, delectus sequi error. Perferendis exercitationem odio maxime ipsam, magni modi adipisci fuga totam sed similique tempore unde quisquam, accusamus dolorem quam molestias, nisi alias. Numquam repellat sunt nobis, obcaecati quaerat minima recusandae accusamus, commodi id nam ducimus. Quod illum libero dolorem doloremque harum? Aut, doloremque ab blanditiis voluptatibus soluta sed! Saepe maiores eveniet consequuntur fugit dolore velit non nemo! Distinctio, cupiditate debitis unde fuga, quod accusantium illum ad ratione totam modi quae earum alias, similique iste amet maiores? Explicabo voluptate laboriosam voluptatum corporis, natus deserunt quis asperiores ducimus enim error. Dolorem, quo! Neque, nulla tempora?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-3">
+
         </section>
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
